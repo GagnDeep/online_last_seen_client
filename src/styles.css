@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
