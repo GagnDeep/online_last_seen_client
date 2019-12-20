@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import {gsap} from 'gsap'
 
 const Container = styled.div`
   width: 95%;
@@ -51,6 +52,7 @@ function Item({
   ...props
 }) {
   const [isOpen, setIsOpen] = useState(false);
+    
   return (
     <Container isOpen={isOpen} onClick={() => setIsOpen(!isOpen)}>
       <div className="item">

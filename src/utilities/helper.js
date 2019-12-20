@@ -38,7 +38,7 @@ function formatData(data) {
     offline: offline.format("h:mm A"),
     onlineDuration: moment.duration(offline.diff(online)).humanize(),
     lastOnline: arr[i + 1]
-      ? moment.duration(arr[i + 1].online.diff(online)).humanize()
+      ? moment.duration(arr[i + 1].offline.diff(online)).humanize()
       : null,
     expectation: 0
   }));
